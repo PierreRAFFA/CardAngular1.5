@@ -1,0 +1,45 @@
+.contact {
+
+  position: relative;
+  float: left;
+
+  .contactContainer{
+    position: relative;
+    float: left;
+    width :100%;
+    padding: 10px;
+    background: #EFEFEF;
+    border-radius: 4px;
+
+    .profile {
+      position: relative;
+      float: left;
+      width: 80px;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    .details {
+      position: relative;
+      float: left;
+      margin-left: 10px;
+      font-size: 0.7em;
+
+      .name {
+        font-weight: bold;
+        font-size: 1em;
+      }
+    }
+
+    .removeContact{
+      position: absolute;
+      top: 10px;
+      right:10px;
+    }
+  }
+
+
+
+}

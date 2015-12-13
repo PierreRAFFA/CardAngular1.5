@@ -1,0 +1,16 @@
+<div class="contact lead col-xs-6 col-md-6 col-lg-6">
+    <div class="contactContainer">
+        <div class="profile">
+            <img src="assets/images/contact-icon.png"/>
+        </div>
+
+        <div class="details">
+            <div class="name">{{vm.contact.firstname}} {{vm.contact.lastname}}</div>
+            <div>{{vm.contact.address}}</div>
+            <div>{{vm.contact.postalCode}} {{vm.contact.town}}</div>
+            <div>{{vm.contact.county}}, {{vm.contact.country}}</div>
+        </div>
+
+        <div class="glyphicon glyphicon-remove removeContact" ng-click="vm.remove($event)"/>
+    </div>
+</div>

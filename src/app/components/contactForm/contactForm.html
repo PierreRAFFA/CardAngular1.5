@@ -1,0 +1,66 @@
+<div class="panel">
+
+    <form name="contactForm" class="form form-horizontal">
+
+        <!--FIRST NAME-->
+        <div class="form-group">
+            <label class="control-label">First Name:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.firstname" name="firstname" required>
+        </div>
+
+        <!--LAST NAME-->
+        <div class="form-group">
+            <label class="control-label">Last Name:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.lastname" name="lastname" required>
+        </div>
+
+        <!--ADDRESS-->
+        <div class="form-group">
+            <label class="control-label">Address:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.address" name="address" required>
+        </div>
+
+        <!--POSTAL CODE-->
+        <div class="form-group">
+            <label class="control-label">Postal Code:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.postalCode" name="postalCode" required>
+        </div>
+
+        <!--TOWN-->
+        <div class="form-group">
+            <label class="control-label">Town:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.town" name="town" required>
+        </div>
+
+        <!--COUNTY-->
+        <div class="form-group">
+            <label class="control-label">County:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.county" name="county" required>
+        </div>
+
+        <!--COUNTRY-->
+        <div class="form-group">
+            <label class="control-label">Country:</label>
+            <input type="text" class="form-control" ng-model="vm.dirtyContact.country" name="country" required>
+        </div>
+
+
+
+        <button ng-if="vm.dirtyContact.id === null" class="btn btn-primary" ng-click="vm.save()">Add Contact</button>
+        <button ng-if="vm.dirtyContact.id !== null" class="btn btn-primary" ng-click="vm.save()">Update Contact</button>
+        <button class="btn btn-link" ng-click="vm.cancel()">Cancel</button>
+    </form>
+
+
+
+    <!--<form name="form" novalidate class="form-group">-->
+        <!--First Name: <input type="text"  ng-model="contact2.firstname" name="uFirstname" required/><br />-->
+        <!--<div ng-show="form.$submitted || form.uFirstname.$touched">-->
+            <!--<div ng-show="form.uFirstname.$error.required">Invalid First Name</div>-->
+        <!--</div>-->
+
+        <!--Last Name: <input type="text" required ng-model="contact2.lastname" /><br />-->
+        <!--<input type="submit" ng-click="vm.save(contact2)" value="Save" />-->
+    <!--</form>-->
+
+</div>

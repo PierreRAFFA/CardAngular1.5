@@ -1,0 +1,29 @@
+<div>
+
+    <div class="panel-title">Decide who to send your card to</div>
+
+    <div class="panel-heading">Select who to send your card to</div>
+
+    <div class="row lead">
+        <a ui-sref="addressBook.add">
+            <button class="btn btn-primary"> + Enter a new contact</button>
+        </a>
+
+
+    </div>
+
+    <div class="row lead">
+        <letter-choice
+                choice="main.filterChoice">
+        </letter-choice>
+    </div>
+
+    <div class="row lead">
+        <address-book
+                filter="main.filterChoice"
+                contacts="main.addressBookService.addressBook.contacts">
+        </address-book>
+    </div>
+
+
+</div>

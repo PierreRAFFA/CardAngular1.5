@@ -1,0 +1,7 @@
+<div class="addressBook">
+    <!--ui-sref="addressBook.update({id:contact.id})"-->
+    <div ng-click="vm.update(contact)"  data-ng-repeat="contact in vm.contacts | firstLetter:vm.filter track by contact.id ">
+        <contact contact="contact"></contact>
+    </div>
+
+</div>
